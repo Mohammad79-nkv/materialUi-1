@@ -9,6 +9,12 @@ const useStyles = makeStyles((theme)=> ({
     [theme.breakpoints.down("xs")]:{
       display: "none"
     }
+  },
+  gridRight: {
+    // position: "fixed",
+    [theme.breakpoints.down("xs")]: {
+      backgroundColor: theme.palette.primary.main,
+    },
   }
 }))
 
@@ -19,7 +25,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Grid container>
-        <Grid item sm={3} xs={2} >
+        <Grid className={classes.gridRight} item sm={3} xs={2} >
           <Rightbar/>
         </Grid>
         <Grid item sm={7} xs={10}>

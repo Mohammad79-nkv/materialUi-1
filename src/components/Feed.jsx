@@ -1,10 +1,12 @@
 import { Container, makeStyles } from "@material-ui/core";
+import Post from "./Post";
 
 const useStyles = makeStyles((theme)=> ({
     container: {
         paddingTop: theme.spacing(10),
-        backgroundColor: "skyBlue",
-        height:"100vh",
+        // backgroundColor: "black",
+        height:"100%",
+        width:"100%",
     }
 }))
 
@@ -14,14 +16,13 @@ const Feed = () => {
 
     return ( 
         <Container className={classes.container}>
-            <div>feed</div>
-            <div>feed</div>
-            <div>feed</div>
-            <div>feed</div>
-            <div>feed</div>
-            <div>feed</div>
-            <div>feed</div>
-            <div>feed</div>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
         </Container>
      );
 }
